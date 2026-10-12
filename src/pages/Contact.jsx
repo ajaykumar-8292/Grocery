@@ -59,7 +59,7 @@ function Contact() {
               </h3>
 
               <p className="text-gray-600 break-all">
-                info@hanspackersmovers.com
+            freshbasket.com
               </p>
             </div>
           </div>
