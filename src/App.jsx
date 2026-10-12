@@ -8,6 +8,7 @@ import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Login from "./pages/Login";
+import Contact from "./pages/Contact";
 
 
 
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/cart" element={<Cart /> } />
         <Route path="/login" element={<Login /> } />
          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/contact" element={<Contact />} />
       </Routes>
 
       < Footer />

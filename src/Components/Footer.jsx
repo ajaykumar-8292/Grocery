@@ -7,6 +7,7 @@ import {
   FaYoutube, 
   FaLinkedinIn 
 } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -50,10 +51,18 @@ const Footer = () => {
         <div>
           <h3 className="text-sm font-semibold tracking-wider mb-4">- Quick Links</h3>
           <ul className="space-y-2 text-sm text-emerald-100">
+            <Link to="/">
             <li><a href="#home" className="hover:text-white transition">Home</a></li>
-            <li><a href="#shop" className="hover:text-white transition">Shop</a></li>
-            <li><a href="#about" className="hover:text-white transition">About Us</a></li>
+            </Link>
+            <Link to="/Products">
+            <li><a href="#shop" className="hover:text-white transition">Products</a></li>
+            </Link>
+            <Link to="/Cart">
+            <li><a href="#about" className="hover:text-white transition">Cart</a></li>
+            </Link>
+            <Link to="/Contact">
             <li><a href="#contact" className="hover:text-white transition">Contact Us</a></li>
+            </Link>
           </ul>
         </div>
 
