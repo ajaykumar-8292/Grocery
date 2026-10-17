@@ -245,6 +245,59 @@ const products2 = [
   },
 ];
 
+{/*four section */}
+
+const products3 = [
+  {
+    name: "Dave, Body &  care ",
+    weight: "1 L",
+    price: 521,
+    rating: "3.7",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRinHuO3I78ghwkfsXAqruDe51q_k8oDsUbbp79kWigdQ&s=10",
+  },
+  {
+    name: "Pears Soap",
+    weight: "125 g",
+    price: 269,
+    rating: "3.1",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRLuOKdMtkPzPMAgMFpWKDg4OQzF_GhaH3Phra2stwsw&s=10",
+  },
+  {
+    name: "CoCoBO",
+    weight: "250 ml",
+    price: 165,
+    rating: "4.6",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0_Qjm1q2GIPmCYQEHGB3u9-P8zFXSU0hP9vIIZn0XHA&s",
+  },
+  {
+    name: "Ghar Shop",
+    weight: "100 ml",
+    price: 230,
+    rating: "4.1",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv7GWTyFqLge7JN22n6Hb4yYNJDey8Safc2KrLeUYMbA&s=10",
+  },
+  {
+    name: "Plix  Roses",
+    weight: "100g",
+    price: 490,
+    rating: "4.1",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBLc2duGcx2tchHOAhOBkIey5-urxZBTydAr-AbEV9Q&s=10",
+  },
+  {
+    name: "Garnier Vitamin C ",
+    weight: "50 g",
+    price: 130,
+    rating: "4.3",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwZt3yUen49Ht8m_yoySLBhmzALdFCDQcOIbKjVKeHbQ&s=10",
+  },
+];
+
 
 {/*Add to button function */}
 
@@ -546,7 +599,7 @@ const products2 = [
         {/* Heading */}
         <div className="mb-2 flex items-center justify-between">
           <h2 className="text-lg font-bold text-emerald-950">
-        Your Daily Staples
+        Grocery & kitchen
           </h2>
 <Link to="/Products">
           <button className="flex items-center gap-1 text-[10px] font-semibold text-emerald-700 hover:text-emerald-900 cursor-pointer">
@@ -556,14 +609,14 @@ const products2 = [
         </div>
 
         {/* Product Cards */}
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+        <div className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 md:grid md:grid-cols-4 md:overflow-visible lg:grid-cols-6">
           {products2.map((product) => (
             <div
               key={product.name}
-              className="min-w-0 rounded-md border border-slate-200 bg- p-1.5 transition hover:-translate-y-0.5 hover:shadow-md  "
-            >
+              className="w-[70%] shrink-0 snap-start rounded-md border border-slate-200 bg-white p-2 transition hover:-translate-y-0.5 hover:shadow-md md:w-auto md:shrink md:snap-none ml-">
+            
               {/* Image and Wishlist */}
-              <div className="relative flex h-16 items-center justify-center overflow-hidden rounded bg-white sm:h-25">
+              <div className="relative flex h-26 items-center justify-center overflow-hidden rounded bg-white sm:h-25 ">
                 <img
                   src={product.image}
                   alt={product.name}
@@ -627,6 +680,95 @@ const products2 = [
     </section>
 
 
+
+{/*four section */}
+
+{/*Beauty & Personal Care */}
+
+ <section className=" w-full  px-3 py-3">
+      <div className="rounded-lg  bg-gray-100 p-3 shadow-sm md:w-full">
+        {/* Heading */}
+        <div className="mb-2 flex items-center justify-between">
+          <h2 className="text-lg font-bold text-emerald-950">
+        Beauty & Personal Care 
+          </h2>
+<Link to="/Products">
+          <button className="flex items-center gap-1 text-[10px] font-semibold text-emerald-700 hover:text-emerald-900 cursor-pointer">
+            View All <ArrowRight size={11} />
+          </button>
+          </Link>
+        </div>
+
+        {/* Product Cards */}
+        <div className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 md:grid md:grid-cols-4 md:overflow-visible lg:grid-cols-6">
+          {products3.map((product) => (
+            <div
+              key={product.name}
+              className="w-[70%] shrink-0 snap-start rounded-md border border-slate-200 bg-white p-2 transition hover:-translate-y-0.5 hover:shadow-md md:w-auto md:shrink md:snap-none ml-">
+            
+              {/* Image and Wishlist */}
+              <div className="relative flex h-26 items-center justify-center overflow-hidden rounded bg-white sm:h-25 ">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="h-full w-full object-contain"
+                  loading="lazy"
+                />
+
+                <button
+                  aria-label={`Add ${product.name} to wishlist`}
+                  className="absolute right-0.5 top-0.5 rounded-full bg-white/90 p-1 text-slate-500 hover:text-red-500 "
+                >
+                  <Heart size={11} />
+                </button>
+              </div>
+
+              {/* Product Details */}
+              <div className="mt-1">
+                <h3 className="truncate text-[14px] font-semibold text-slate-900  ">
+                  {product.name}
+                </h3>
+
+                <p className="text-[11px] text-slate-500">
+                  {product.weight}
+                </p>
+
+                <p className="mt-1 text-[10px] font-bold text-emerald-700">
+                  ₹{product.price}
+                </p>
+
+                <div className="mt-0.5 flex items-center gap-1">
+                  <Star
+                    size={10}
+                    fill="#eab308"
+                    className="text-yellow-500"
+                  />
+                  <span className="text-[9px] font-medium text-slate-600">
+                    {product.rating}
+                  </span>
+                </div>
+
+                {/* Add to Cart */}
+                <button
+                  type="button"
+  onClick={() => {
+    if (typeof addToCart === "function") {
+      addToCart(product);
+      alert("Product added to cart successfully!");
+    } else {
+      alert("Error: Add to Cart function is not connected.");
+    }
+  }}
+                  className="mt-1.5 w-full rounded-sm bg-emerald-700 px-1 py-1.5 text-[9px] font-semibold text-white transition hover:bg-emerald-800 cursor-pointer"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
 
 
 

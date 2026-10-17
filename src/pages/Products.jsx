@@ -405,12 +405,9 @@ function Products() {
           <h2 className="text-3xl font-bold mb-6 md:ml-30">
             More Products
           </h2>
-          <input type="text" 
-          placeholder='Search Products' 
-          className=' mb-6 w-full rounded-xl border border-gray-300 bg-white p-4 outline-none focus:border-green-600 focus:ring-2 focus:ring-green-200 '
-          />
+          
 <Link to="/Cart">
-           <div className="mb-4 text-5xl md:ml-30 md:flex flex gap-">🛒
+           <div className="mb-4 text-5xl md:ml-150 md:flex flex gap-">🛒
 
 <div className=' text-2xl  md:w-80 '>
           <h1 className="text-2xl font-bold text-gray-800 md:w-120">
