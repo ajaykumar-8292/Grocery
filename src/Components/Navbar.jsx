@@ -139,11 +139,15 @@ export default function Navbar() {
       <div className="   grid w-full grid-cols-1 md:pl-3  pr-25   ">
      
              <div className="bg-emerald-700 rounded-full md:w-15  w-12 h- md:pl-4 pt-2 pl-2  md:ml-1 md:h-15 md:pt-4 ">
+               <Link to="/Fresh">
                  <GiFruitBowl  className="text-white md:text-2xl  text-3xl  " />
+                   </Link>
                   </div>
      
                   <div className="md:pl-3 w-70  md:pl- ">
+                   
                   <h3 className="font-medium text-lg">Fresh</h3>
+                
                  
                   </div>
          </div>
@@ -154,11 +158,15 @@ export default function Navbar() {
      <div className="    grid w-full grid-cols-1  md:pl-3  pr-25   ">
      
              <div className="bg-emerald-700 rounded-full md:w-15 w-12   md:pl-4 pt-2 pl-2  md:ml-3 md:h-15 md:pt-4  ml-3">
+                <Link to="/Grocery">
                  <MdLocalGroceryStore className="text-white md:text-3xl  text-3xl  " />
+                   </Link>
                   </div>
      
                   <div className="md:pl-3 w-70     ">
+                  
                   <h3 className="font-medium text-lg">Grocery</h3>
+                
 
                   </div>
          </div>
@@ -169,11 +177,15 @@ export default function Navbar() {
           <div className="    grid w-full grid-cols-1   md:pl-3  pr-30  ">
      
              <div className="bg-emerald-700 rounded-full md:w-15  w-12 md:pl-4  pt-2 pl-2 md:ml-6 md:h-15 md:pt-4 ml-5 ">
+                <Link to="/Electronics">
                  <TbBrandElectronicArts className="text-white md:text-2xl  text-3xl  " />
+                   </Link>
                   </div>
      
                   <div className="md:pl-3 w-70  ">
+                  
                   <h3 className="font-medium text-lg">Electronics</h3>
+                
                   
                   </div>
          </div>
@@ -184,7 +196,9 @@ export default function Navbar() {
            <div className="    grid w-full grid-cols-1   md:pl-3  pr-25   ">
      
              <div className="bg-emerald-700 rounded-full md:w-15  w-12 md:pl-4 pt-2 pl-2 md:ml-2 md:h-15 md:pt-4 ">
+              <Link to="/deals">
                  <FaIdeal  className="text-white md:text-2xl  text-3xl  " />
+                 </Link>
                   </div>
      
                   <div className="md:pl-3 w-70    ">
@@ -199,7 +213,9 @@ export default function Navbar() {
          <div className="   grid w-full grid-cols-1   md:pl-3  pr-25   ">
      
              <div className="bg-emerald-700 rounded-full md:w-15  w-12 md:pl-4  pt-2 pl-2 md:ml-5 md:h-15 md:pt-4 ml-5">
+              <Link to="/Pharmacy">
                  <MdLocalPharmacy className="text-white md:text-2xl  text-3xl  " />
+                 </Link>
                   </div>
      
                   <div className="md:pl-3 w-70    ">

@@ -9,6 +9,11 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Login from "./pages/Login";
 import Contact from "./pages/Contact";
+import Fresh from "./pages/Fresh";
+import Grocery from "./pages/Grocery";
+import Electronics from "./pages/Electronics";
+import Deals from "./pages/Deals";
+import Pharmacy from "./pages/Pharmacy";
 
 
 
@@ -33,6 +38,11 @@ export default function App() {
         <Route path="/login" element={<Login /> } />
          <Route path="/checkout" element={<Checkout />} />
           <Route path="/contact" element={<Contact />} />
+           <Route path="/Fresh" element={<Fresh />} />
+            <Route path="/Grocery" element={<Grocery />} />
+            <Route path="/Electronics" element={<Electronics />} />
+             <Route path="/Deals" element={<Deals />} />
+              <Route path="/Pharmacy" element={<Pharmacy />} />
       </Routes>
 
       < Footer />
