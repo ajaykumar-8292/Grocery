@@ -788,7 +788,7 @@ const products3 = [
 
      <div className="mx-auto grid w-full grid-cols-1 gap-3 p-3 sm:grid-cols-2  ">
 
-       <div  className="w-full overflow-hidden rounded-lg">
+       <div  className="w-full overflow-hidden rounded-lg ">
         <img src={hero7} alt="hero7" />
         </div>
 

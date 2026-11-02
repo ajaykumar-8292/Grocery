@@ -213,6 +213,7 @@ function Cart() {
     },
     
   ];
+  
 
   const totalItems = cart.reduce(
     (total, item) => total + item.quantity,
